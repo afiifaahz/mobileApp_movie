@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_movie3.dart';
+import 'package:ui/screens/detail_AllMovie.dart';
 import 'package:ui/viewmodel/fetchHorror.dart';
 
 class HorrorList extends StatefulWidget {
@@ -115,7 +115,7 @@ class _HorrorListState extends State<HorrorList> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailHorror(movie: horror),
+                      builder: (context) => DetailMovie(movie: horror),
                     ),
                   );
                 },

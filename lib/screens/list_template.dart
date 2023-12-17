@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_top.dart';
+import 'package:ui/screens/detail_AllMovie.dart';
 import 'package:ui/viewmodel/fetchRekomen.dart'; // Update import statement
 
 class TopList extends StatefulWidget {
@@ -115,7 +115,7 @@ class _TopListState extends State<TopList> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailTop(movie: movie),
+                      builder: (context) => DetailMovie(movie: movie),
                     ),
                   );
                 },

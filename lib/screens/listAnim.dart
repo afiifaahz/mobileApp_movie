@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_movie4.dart';
+import 'package:ui/screens/detail_AllMovie.dart';
 import 'package:ui/viewmodel/fetchAnimation.dart';
 
 class AnimationList extends StatefulWidget {
@@ -115,7 +115,7 @@ class _AnimationListState extends State<AnimationList> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailAnimation(movie: animation),
+                      builder: (context) => DetailMovie(movie: animation),
                     ),
                   );
                 },

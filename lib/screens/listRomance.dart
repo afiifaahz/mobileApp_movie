@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_movie2.dart';
+import 'package:ui/screens/detail_AllMovie.dart';
 import 'package:ui/viewmodel/fetchRomance.dart';
 
 class RomanceList extends StatefulWidget {
@@ -115,7 +115,7 @@ class _RomanceListState extends State<RomanceList> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => DetailRomance(movie: romance),
+                      builder: (context) => DetailMovie(movie: romance),
                     ),
                   );
                 },

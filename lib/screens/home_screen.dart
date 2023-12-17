@@ -2,8 +2,7 @@ import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_latest.dart';
-import 'package:ui/screens/detail_top.dart';
+import 'package:ui/screens/detail_AllMovie.dart';
 import 'package:ui/screens/kategori_card.dart';
 import 'package:ui/viewmodel/fetchLatest.dart';
 import 'navigasi_bottom.dart';
@@ -165,7 +164,7 @@ class HomeScreen extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => DetailLatest(movie: latestMovies[index]),
+                builder: (context) => DetailMovie(movie: latestMovies[index]),
               ),
             );
           },
@@ -299,7 +298,7 @@ Widget _movieList(List<MovieModal>? movies) {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => DetailTop(movie: movies[index]),
+                builder: (context) => DetailMovie(movie: movies[index]),
               ),
             );
           },
