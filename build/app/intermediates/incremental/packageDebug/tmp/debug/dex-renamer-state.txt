@@ -1,4 +1,4 @@
-#Sat Dec 16 19:47:57 WIB 2023
-base.0=D\:\\SMT 5\\uts-mobile-movie_app-main\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun Dec 17 07:11:43 WIB 2023
+base.0=D\:\\SMT 5\\movieapp_uas\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

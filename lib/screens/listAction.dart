@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionmodel.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/detail_movie.dart';
+import 'package:ui/viewmodel/fetchAction.dart';
 
 class ActionList extends StatefulWidget {
   @override
@@ -9,7 +10,7 @@ class ActionList extends StatefulWidget {
 }
 
 class _ActionListState extends State<ActionList> {
-  late Future<List<ActionModal>> actionData;
+  late Future<List<MovieModal>> actionData;
 
   @override
   void initState() {
@@ -19,11 +20,11 @@ class _ActionListState extends State<ActionList> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<ActionModal>>(
+    return FutureBuilder<List<MovieModal>>(
       future: actionData,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<ActionModal> actionList = snapshot.data!;
+          List<MovieModal> actionList = snapshot.data!;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: actionList.map((action) {
@@ -40,7 +41,7 @@ class _ActionListState extends State<ActionList> {
     );
   }
 
-  Widget buildActionListItem(ActionModal action) {
+  Widget buildActionListItem(MovieModal action) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

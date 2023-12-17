@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionmodel.dart';
 import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/detail_AllMovie.dart';
-import 'package:ui/screens/detail_movie.dart';
+import 'package:ui/viewmodel/fetchdata.dart';
 
 class MovieList extends StatefulWidget {
   @override

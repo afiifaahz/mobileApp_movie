@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/horrormodel.dart'; // Import the HorrorModal class
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/listHorror.dart';
+import 'package:ui/viewmodel/fetchHorror.dart';
 import 'navigasi_bottom.dart';
 
 class ListViewMovieH extends StatelessWidget {
@@ -17,7 +18,7 @@ class ListViewMovieH extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 22, 22, 53),
       ),
-      body: FutureBuilder<List<HorrorModal>?>(
+      body: FutureBuilder<List<MovieModal>?>(
         future: fetchHorrorData(), // Use the fetchHorrorData function
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -40,7 +41,7 @@ class ListViewMovieH extends StatelessWidget {
                       height: 11,
                     ),
                     itemBuilder: (context, index) {
-                      final HorrorModal movie = horrorList![index];
+                      final MovieModal movie = horrorList![index];
                       // Use the appropriate widget for each item (e.g., HorrorList)
                       return HorrorList();
                     },

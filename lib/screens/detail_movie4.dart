@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/animationmodel.dart';
+import 'package:ui/models/movie_model.dart';
 
 
 class DetailAnimation extends StatelessWidget {
@@ -10,7 +10,7 @@ class DetailAnimation extends StatelessWidget {
     required this.movie,
   }) : super(key: key);
 
-  final AnimationModal movie;
+  final MovieModal movie;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class DetailAnimation extends StatelessWidget {
     );
   }
 
-  Positioned _buildMovieInformation(BuildContext context, AnimationModal movie) {
+  Positioned _buildMovieInformation(BuildContext context, MovieModal movie) {
     return Positioned(
       bottom: 150,
       width: MediaQuery.of(context).size.width,
@@ -98,7 +98,7 @@ class DetailAnimation extends StatelessWidget {
     );
   }
 
-  List<Widget> _buildBackground(context, AnimationModal movie) {
+  List<Widget> _buildBackground(context, MovieModal movie) {
     return [
       Container(
         height: double.infinity,

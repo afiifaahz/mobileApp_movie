@@ -1195,7 +1195,7 @@
             "outputFile": "com.example.ui.app-merged_res-15:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\SMT 5\\uts-mobile-movie_app-main\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\SMT 5\\movieapp_uas\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -3463,6 +3463,25 @@
                     }
                 },
                 {
+                    "source": "D:\\SMT 5\\movieapp_uas\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "130,134",
+                        "startColumns": "4,4",
+                        "startOffsets": "9259,9440",
+                        "endLines": "133,136",
+                        "endColumns": "12,12",
+                        "endOffsets": "9435,9604"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Afifah\\.gradle\\caches\\transforms-3\\6d3bbaf4594b8ed85e4722883be764b3\\transformed\\browser-1.4.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -3494,25 +3513,6 @@
                         "startOffsets": "6434,7612",
                         "endColumns": "67,166",
                         "endOffsets": "6497,7774"
-                    }
-                },
-                {
-                    "source": "D:\\SMT 5\\uts-mobile-movie_app-main\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "130,134",
-                        "startColumns": "4,4",
-                        "startOffsets": "9259,9440",
-                        "endLines": "133,136",
-                        "endColumns": "12,12",
-                        "endOffsets": "9435,9604"
                     }
                 },
                 {

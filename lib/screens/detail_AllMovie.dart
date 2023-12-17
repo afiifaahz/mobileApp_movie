@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionmodel.dart';
 import 'package:ui/models/movie_model.dart';
 
 

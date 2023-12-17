@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:ui/models/fetchLatest.dart'; // Update import statement
-import 'package:ui/models/fetchRekomen.dart';
-// import 'package:ui/screens/detail_latest.dart';
-import 'package:ui/screens/detail_top.dart'; // Update import statement
+import 'package:ui/models/movie_model.dart';
+import 'package:ui/screens/detail_top.dart';
+import 'package:ui/viewmodel/fetchRekomen.dart'; // Update import statement
 
 class TopList extends StatefulWidget {
   @override
@@ -11,7 +10,7 @@ class TopList extends StatefulWidget {
 }
 
 class _TopListState extends State<TopList> {
-  late Future<List<TopModal>> topData;
+  late Future<List<MovieModal>> topData;
 
   @override
   void initState() {
@@ -21,11 +20,11 @@ class _TopListState extends State<TopList> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<TopModal>>(
+    return FutureBuilder<List<MovieModal>>(
       future: topData,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<TopModal> movieList = snapshot.data!;
+          List<MovieModal> movieList = snapshot.data!;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: movieList.map((movie) {
@@ -42,7 +41,7 @@ class _TopListState extends State<TopList> {
     );
   }
 
-  Widget buildMovieListItem(TopModal movie) {
+  Widget buildMovieListItem(MovieModal movie) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -4,7 +4,7 @@
             "outputFile": "com.example.ui.app-mergeDebugResources-13:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\SMT 5\\uts-mobile-movie_app-main\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\SMT 5\\movieapp_uas\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

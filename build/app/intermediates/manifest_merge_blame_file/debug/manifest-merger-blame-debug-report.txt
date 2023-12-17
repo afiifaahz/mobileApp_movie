@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->D:\SMT 5\uts-mobile-movie_app-main\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->D:\SMT 5\uts-mobile-movie_app-main\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->D:\SMT 5\movieapp_uas\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->D:\SMT 5\movieapp_uas\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\Afifah\.gradle\caches\transforms-3\a67ee94e09c2e64da72e5c9dc1400fe1\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:26:5-79
 16-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\Afifah\.gradle\caches\transforms-3\a67ee94e09c2e64da72e5c9dc1400fe1\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:26:22-76
@@ -60,25 +60,25 @@
 55            android:value="2" />
 56
 57        <service
-57-->[:firebase_auth] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+57-->[:firebase_auth] D:\SMT 5\movieapp_uas\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 58            android:name="com.google.firebase.components.ComponentDiscoveryService"
-58-->[:firebase_auth] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+58-->[:firebase_auth] D:\SMT 5\movieapp_uas\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 59            android:directBootAware="true"
 59-->[com.google.firebase:firebase-common:20.4.2] C:\Users\Afifah\.gradle\caches\transforms-3\e7d9dc77e05549f012842a2b34d6bb45\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 60            android:exported="false" >
 60-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\Afifah\.gradle\caches\transforms-3\a67ee94e09c2e64da72e5c9dc1400fe1\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:68:13-37
 61            <meta-data
-61-->[:firebase_auth] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+61-->[:firebase_auth] D:\SMT 5\movieapp_uas\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 62                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-62-->[:firebase_auth] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+62-->[:firebase_auth] D:\SMT 5\movieapp_uas\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[:firebase_auth] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+63-->[:firebase_auth] D:\SMT 5\movieapp_uas\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 64            <meta-data
-64-->[:firebase_core] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+64-->[:firebase_core] D:\SMT 5\movieapp_uas\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 65                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-65-->[:firebase_core] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+65-->[:firebase_core] D:\SMT 5\movieapp_uas\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 66                android:value="com.google.firebase.components.ComponentRegistrar" />
-66-->[:firebase_core] D:\SMT 5\uts-mobile-movie_app-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+66-->[:firebase_core] D:\SMT 5\movieapp_uas\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 67            <meta-data
 67-->[com.google.firebase:firebase-auth:22.3.0] C:\Users\Afifah\.gradle\caches\transforms-3\a67ee94e09c2e64da72e5c9dc1400fe1\transformed\jetified-firebase-auth-22.3.0\AndroidManifest.xml:69:13-71:85
 68                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

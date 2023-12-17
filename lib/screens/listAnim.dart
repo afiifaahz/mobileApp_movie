@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/animationmodel.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/detail_movie4.dart';
+import 'package:ui/viewmodel/fetchAnimation.dart';
 
 class AnimationList extends StatefulWidget {
   @override
@@ -9,7 +10,7 @@ class AnimationList extends StatefulWidget {
 }
 
 class _AnimationListState extends State<AnimationList> {
-  late Future<List<AnimationModal>> animationData;
+  late Future<List<MovieModal>> animationData;
 
   @override
   void initState() {
@@ -19,11 +20,11 @@ class _AnimationListState extends State<AnimationList> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<AnimationModal>>(
+    return FutureBuilder<List<MovieModal>>(
       future: animationData,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<AnimationModal> animationList = snapshot.data!;
+          List<MovieModal> animationList = snapshot.data!;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: animationList.map((animation) {
@@ -40,7 +41,7 @@ class _AnimationListState extends State<AnimationList> {
     );
   }
 
-  Widget buildAnimationListItem(AnimationModal animation) {
+  Widget buildAnimationListItem(MovieModal animation) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

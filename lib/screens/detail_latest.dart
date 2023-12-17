@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/fetchLatest.dart';
+import 'package:ui/models/movie_model.dart';
 
 class DetailLatest extends StatelessWidget {
   const DetailLatest({
@@ -9,7 +9,7 @@ class DetailLatest extends StatelessWidget {
     required this.movie,
   }) : super(key: key);
 
-  final LatestModal movie;
+  final MovieModal movie;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class DetailLatest extends StatelessWidget {
     );
   }
 
-  Positioned _buildMovieInformation(BuildContext context, LatestModal movie) {
+  Positioned _buildMovieInformation(BuildContext context, MovieModal movie) {
     return Positioned(
       bottom: 150,
       width: MediaQuery.of(context).size.width,
@@ -97,7 +97,7 @@ class DetailLatest extends StatelessWidget {
     );
   }
 
-  List<Widget> _buildBackground(context, LatestModal movie) {
+  List<Widget> _buildBackground(context, MovieModal movie) {
     return [
       Container(
         height: double.infinity,

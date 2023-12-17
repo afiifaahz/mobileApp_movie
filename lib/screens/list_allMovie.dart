@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionmodel.dart';
 import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/listAction.dart';
 import 'package:ui/screens/listMovie.dart';
 import 'package:ui/screens/list_template.dart';
+import 'package:ui/viewmodel/fetchdata.dart';
 import 'navigasi_bottom.dart';
 
 class ListViewAllMovie extends StatelessWidget {

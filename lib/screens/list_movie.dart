@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionmodel.dart';
 import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/listAction.dart';
 import 'package:ui/screens/list_template.dart';
+import 'package:ui/viewmodel/fetchAction.dart';
 import 'navigasi_bottom.dart';
 
 class ListViewMovie extends StatelessWidget {
@@ -19,7 +19,7 @@ class ListViewMovie extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 22, 22, 53),
       ),
-      body: FutureBuilder<List<ActionModal>?>(
+      body: FutureBuilder<List<MovieModal>?>(
         future: fetchActionData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -42,7 +42,7 @@ class ListViewMovie extends StatelessWidget {
                       height: 11,
                     ),
                     itemBuilder: (context, index) {
-                      final ActionModal movie = actionList![index];
+                      final MovieModal movie = actionList![index];
                       // Use the RomanceList widget for each item
                       return ActionList();
                     },

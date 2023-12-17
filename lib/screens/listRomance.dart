@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/romancemodel.dart';
-import 'package:ui/screens/detail_movie.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/detail_movie2.dart';
+import 'package:ui/viewmodel/fetchRomance.dart';
 
 class RomanceList extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class RomanceList extends StatefulWidget {
 }
 
 class _RomanceListState extends State<RomanceList> {
-  late Future<List<RomanceModal>> romanceData;
+  late Future<List<MovieModal>> romanceData;
 
   @override
   void initState() {
@@ -20,11 +20,11 @@ class _RomanceListState extends State<RomanceList> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<RomanceModal>>(
+    return FutureBuilder<List<MovieModal>>(
       future: romanceData,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<RomanceModal> romanceList = snapshot.data!;
+          List<MovieModal> romanceList = snapshot.data!;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: romanceList.map((romance) {
@@ -41,7 +41,7 @@ class _RomanceListState extends State<RomanceList> {
     );
   }
 
-  Widget buildRomanceListItem(RomanceModal romance) {
+  Widget buildRomanceListItem(MovieModal romance) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

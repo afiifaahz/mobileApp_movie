@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/horrormodel.dart'; // Ganti dengan model yang sesuai
-import 'package:ui/screens/detail_movie.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/detail_movie3.dart';
+import 'package:ui/viewmodel/fetchHorror.dart';
 
 class HorrorList extends StatefulWidget {
   @override
@@ -10,7 +10,7 @@ class HorrorList extends StatefulWidget {
 }
 
 class _HorrorListState extends State<HorrorList> {
-  late Future<List<HorrorModal>> horrorData;
+  late Future<List<MovieModal>> horrorData;
 
   @override
   void initState() {
@@ -20,11 +20,11 @@ class _HorrorListState extends State<HorrorList> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<HorrorModal>>(
+    return FutureBuilder<List<MovieModal>>(
       future: horrorData,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<HorrorModal> horrorList = snapshot.data!;
+          List<MovieModal> horrorList = snapshot.data!;
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: horrorList.map((horror) {
@@ -41,7 +41,7 @@ class _HorrorListState extends State<HorrorList> {
     );
   }
 
-  Widget buildHorrorListItem(HorrorModal horror) {
+  Widget buildHorrorListItem(MovieModal horror) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/fetchRekomen.dart';
+import 'package:ui/models/movie_model.dart';
 
 class DetailTop extends StatelessWidget {
   const DetailTop({
@@ -9,7 +9,7 @@ class DetailTop extends StatelessWidget {
     required this.movie,
   }) : super(key: key);
 
-  final TopModal movie; // Change the type to TopModal
+  final MovieModal movie; // Change the type to MovieModal
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class DetailTop extends StatelessWidget {
     );
   }
 
-  Positioned _buildMovieInformation(BuildContext context, TopModal movie) {
+  Positioned _buildMovieInformation(BuildContext context, MovieModal movie) {
     return Positioned(
       bottom: 150,
       width: MediaQuery.of(context).size.width,
@@ -97,7 +97,7 @@ class DetailTop extends StatelessWidget {
     );
   }
 
-  List<Widget> _buildBackground(context, TopModal movie) {
+  List<Widget> _buildBackground(context, MovieModal movie) {
     return [
       Container(
         height: double.infinity,

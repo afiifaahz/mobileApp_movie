@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/actionModel.dart';
-import 'package:ui/models/animationModel.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/listAction.dart';
 import 'package:ui/screens/listAnim.dart';
 import 'package:ui/screens/list_template.dart';
+import 'package:ui/viewmodel/fetchAnimation.dart';
 import 'navigasi_bottom.dart';
 
 class ListViewMovieAnn extends StatelessWidget {
@@ -20,7 +20,7 @@ class ListViewMovieAnn extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 22, 22, 53),
       ),
-      body: FutureBuilder<List<AnimationModal>?>(
+      body: FutureBuilder<List<MovieModal>?>(
         future: fetchAnimationData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -43,7 +43,7 @@ class ListViewMovieAnn extends StatelessWidget {
                       height: 11,
                     ),
                     itemBuilder: (context, index) {
-                      final AnimationModal movie =animationList![index];
+                      final MovieModal movie =animationList![index];
                       // Use the RomanceList widget for each item
                       return AnimationList();
                     },

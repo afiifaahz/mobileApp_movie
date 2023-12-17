@@ -1,25 +1,20 @@
-import 'dart:math';
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/fetchLatest.dart';
-import 'package:ui/models/fetchRekomen.dart';
 import 'package:ui/models/movie_model.dart';
-import 'package:ui/screens/detail_Allmovie.dart';
 import 'package:ui/screens/detail_latest.dart';
 import 'package:ui/screens/detail_top.dart';
 import 'package:ui/screens/kategori_card.dart';
+import 'package:ui/viewmodel/fetchLatest.dart';
 import 'navigasi_bottom.dart';
 import 'list_template.dart';
 
 var menus = [
   FeatherIcons.home,
   FeatherIcons.list,
-  // FeatherIcons.messageCircle,
-  // FeatherIcons.user
+  
 ];
-// var selectedCategory = 0;
-//     final latestMoviesForCard = movies.take(5).toList();
+
 
 
 class HomeScreen extends StatelessWidget {
@@ -63,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 5),
-                    FutureBuilder<List<LatestModal>>(
+                    FutureBuilder<List<MovieModal>>(
                       future: fetchLatestData(),
                       builder: (context, latestDataSnapshot) {
                         if (latestDataSnapshot.connectionState == ConnectionState.waiting) {
@@ -110,7 +105,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget promoCard(LatestModal movie) {
+  Widget promoCard(MovieModal movie) {
     return Container(
       width: 150,
       height: 250,
@@ -153,7 +148,7 @@ class HomeScreen extends StatelessWidget {
   }
 
 
-  Widget _cardmovie(List<LatestModal>? latestMovies) {
+  Widget _cardmovie(List<MovieModal>? latestMovies) {
   if (latestMovies == null || latestMovies.isEmpty) {
     return Container(); // Return an empty container or a placeholder widget
   }
@@ -287,7 +282,7 @@ class HomeScreen extends StatelessWidget {
  
 }
 
-Widget _movieList(List<TopModal>? movies) {
+Widget _movieList(List<MovieModal>? movies) {
   if (movies == null || movies.isEmpty) {
     return Container(); // Return an empty container or a placeholder widget
   }
@@ -315,7 +310,7 @@ Widget _movieList(List<TopModal>? movies) {
   );
 }
 
-Widget _buildMovieCard(TopModal movie) {
+Widget _buildMovieCard(MovieModal movie) {
   return Container(
     width: 150,
     height: 250,

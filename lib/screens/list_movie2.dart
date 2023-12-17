@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui/models/romancemodel.dart';
+import 'package:ui/models/movie_model.dart';
 import 'package:ui/screens/listRomance.dart';
+import 'package:ui/viewmodel/fetchRomance.dart';
 import 'navigasi_bottom.dart';
 
 class ListViewMovieR extends StatelessWidget {
@@ -17,7 +18,7 @@ class ListViewMovieR extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 22, 22, 53),
       ),
-      body: FutureBuilder<List<RomanceModal>?>(
+      body: FutureBuilder<List<MovieModal>?>(
         future: fetchRomanceData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -46,7 +47,7 @@ class ListViewMovieR extends StatelessWidget {
                       height: 11,
                     ),
                     itemBuilder: (context, index) {
-                      final RomanceModal movie = romanceList![index];
+                      final MovieModal movie = romanceList![index];
                       // Use the RomanceList widget for each item   w
                       return RomanceList();
                     },
